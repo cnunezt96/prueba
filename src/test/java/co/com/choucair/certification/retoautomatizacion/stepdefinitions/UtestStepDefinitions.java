@@ -1,6 +1,7 @@
 package co.com.choucair.certification.retoautomatizacion.stepdefinitions;
 
 import co.com.choucair.certification.retoautomatizacion.model.UtestDatos;
+import co.com.choucair.certification.retoautomatizacion.questions.Responder;
 import co.com.choucair.certification.retoautomatizacion.tasks.*;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -31,7 +32,8 @@ public class UtestStepDefinitions {
     }
 
     @Then("^: El registro se completa al ver el boton de Complete Setup$")
-    public void elRegistroSeCompletaAlVerElBotonDeCompleteSetup() throws Exception {
+    public void elRegistroSeCompletaAlVerElBotonDeCompleteSetup(List<UtestDatos> datos) throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Responder.aLos(datos)));
 
     }
 

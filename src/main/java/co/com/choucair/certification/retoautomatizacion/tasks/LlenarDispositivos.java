@@ -28,7 +28,15 @@ public class LlenarDispositivos implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-    actor.attemptsTo(Click.on(CONTENEDOR_DISPOSITIVO),
+    actor.attemptsTo(
+
+            Click.on(CONTENEDOR_COMPUTADOR),
+            Enter.theValue(datos.get(0).getStrComputador()).into(COMPUTADOR).thenHit(Keys.ARROW_UP,Keys.ENTER),
+            Click.on(CONTENEDOR_VERSION_COMPUTADOR),
+            Enter.theValue(datos.get(0).getStrModelComputador()).into(VERSION_COMPUTADOR).thenHit(Keys.ARROW_UP,Keys.ENTER),
+            Click.on(CONTENEDOR_LENGUAJE),
+            Enter.theValue(datos.get(0).getStrLenguaje()).into(LENGUAJE).thenHit(Keys.ARROW_UP,Keys.ENTER),
+            Click.on(CONTENEDOR_DISPOSITIVO),
             Enter.theValue(datos.get(0).getStrDispositivoMovil()).into(DISPOSITIVO_MOVIL).thenHit(Keys.ARROW_DOWN,Keys.ENTER),
             Click.on(CONTENEDOR_MODELO_MOVIL),
             Enter.theValue(datos.get(0).getStrModeloMovil()).into(MODELO_MOVIL).thenHit(Keys.ARROW_DOWN,Keys.ENTER),

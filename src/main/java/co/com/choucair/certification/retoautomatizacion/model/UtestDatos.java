@@ -62,6 +62,47 @@ public class UtestDatos {
     private String strPais;
     private String strZip;
     private String strClave;
+    private String strTextoFinal;
+    private String strComputador;
+    private String strModelComputador;
+    private String strLenguaje;
+
+    public String getStrComputador() {
+        return strComputador;
+    }
+
+    public void setStrComputador(String strComputador) {
+        this.strComputador = strComputador;
+    }
+
+    public String getStrModelComputador() {
+        return strModelComputador;
+    }
+
+    public void setStrModelComputador(String strModelComputador) {
+        this.strModelComputador = strModelComputador;
+    }
+
+
+    public String getStrLenguaje() {
+        return strLenguaje;
+    }
+
+    public void setStrLenguaje(String strLenguaje) {
+        this.strLenguaje = strLenguaje;
+    }
+
+
+
+    public String getStrTextoFinal() {
+        return strTextoFinal;
+    }
+
+    public void setStrTextoFinal(String strTextoFinal) {
+        this.strTextoFinal = strTextoFinal;
+    }
+
+
 
 
     public String getStrClave() {

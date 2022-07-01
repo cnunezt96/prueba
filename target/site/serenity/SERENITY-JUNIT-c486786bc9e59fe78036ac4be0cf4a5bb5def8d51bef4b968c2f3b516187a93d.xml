@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de usuario en Utest" skipped="0" tests="1" time="34.12" timestamp="2022-07-01 02:59:52"><testcase name="Registro de Camilo en la pagina Utest"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled&#13;
-co.com.choucair.certification.retoautomatizacion.tasks.LlenarDispositivos.performAs(LlenarDispositivos.java:31)&#13;
-co.com.choucair.certification.retoautomatizacion.stepdefinitions.UtestStepDefinitions.elUsuarioIngresaLosDatosRequeridosPorElSistema(UtestStepDefinitions.java:29)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Registro de usuario en Utest" skipped="0" tests="1" time="35.73" timestamp="2022-07-01 05:25:55"><testcase name="Registro de Camilo en la pagina Utest"/></testsuite>
